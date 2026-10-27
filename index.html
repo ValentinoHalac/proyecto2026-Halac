@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Valentino Halac">
+    <meta name="description"
+        content="Bajo Palos: calculadora de rendimiento para arqueros de fútbol. Cargá tus estadísticas y conocé tu porcentaje de atajadas, goles recibidos y vallas invictas.">
+    <meta name="keywords" content="arquero, fútbol, estadísticas, calculadora, atajadas, vallas invictas, rendimiento">
+    <title>Bajo Palos | Inicio</title>
+    <link rel="icon" type="image/svg+xml" href="imagenes/logo-bajo-palos.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <div class="pagina">
+        <header class="cabecera">
+            <div class="contenedor cabecera-interior">
+                <a class="marca" href="index.html">
+                    <img class="marca-logo" src="imagenes/logo-bajo-palos.svg"
+                        alt="Logo de Bajo Palos: un arco con una pelota">
+                    <h1 class="marca-titulo">Bajo Palos</h1>
+                </a>
+                <input class="menu-check" type="checkbox" id="menu-toggle">
+                <label class="menu-boton" for="menu-toggle">☰</label>
+                <nav class="menu">
+                    <a class="menu-enlace activo" href="index.html">Inicio</a>
+                    <a class="menu-enlace" href="calculadora.html">Calculadora</a>
+                    <a class="menu-enlace" href="referencias.html">Referencias</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="contenedor contenido">
+            <div class="portada">
+                <img class="portada-imagen" src="imagenes/arquero-atajando.jpg"
+                    alt="Arquero estirándose para atajar un remate al ángulo">
+            </div>
+
+            <section class="seccion">
+                <h2 class="seccion-titulo">¿Cómo rendís bajo los tres palos?</h2>
+                <p class="seccion-texto">
+                    Bajo Palos es una calculadora pensada para arqueros de todas las categorías. Cargás los números
+                    de tu temporada y en segundos obtenés las métricas que usan los entrenadores para evaluar a un
+                    arquero: porcentaje de atajadas, goles recibidos por partido y vallas invictas.
+                </p>
+            </section>
+
+            <section class="seccion">
+                <div class="pasos">
+                    <article class="tarjeta">
+                        <span class="tarjeta-numero">1</span>
+                        <h3 class="tarjeta-titulo">Cargá tus números</h3>
+                        <p>Partidos, minutos, tiros al arco, goles recibidos y vallas invictas de tu temporada.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <span class="tarjeta-numero">2</span>
+                        <h3 class="tarjeta-titulo">Obtené tus métricas</h3>
+                        <p>La calculadora te muestra tu efectividad y una valoración según tu categoría.</p>
+                    </article>
+                    <article class="tarjeta">
+                        <span class="tarjeta-numero">3</span>
+                        <h3 class="tarjeta-titulo">Compará con referencias</h3>
+                        <p>Mirá qué valores se esperan en cada categoría y sumá consejos para mejorar.</p>
+                    </article>
+                </div>
+                <div class="centrado">
+                    <a class="boton boton-principal" href="calculadora.html">Ir a la calculadora</a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="pie">
+            <div class="contenedor">
+                <p>Bajo Palos · Taller de Desarrollo Web · UCC · 2026 · Hecho por Valentino</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
