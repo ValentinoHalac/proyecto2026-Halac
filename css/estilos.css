@@ -225,6 +225,199 @@ a {
     background-color: var(--amarillo-oscuro);
 }
 
+.boton-secundario {
+    background-color: var(--blanco);
+    color: var(--verde-oscuro);
+    border-color: var(--verde-oscuro);
+}
+
+.boton-secundario:hover {
+    background-color: var(--verde-claro);
+}
+
+.calculadora {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: start;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.campo-etiqueta {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.campo-entrada {
+    font-family: var(--fuente-texto);
+    font-size: 1rem;
+    padding: 10px 12px;
+    border: 1px solid var(--borde);
+    border-radius: 8px;
+    background-color: var(--blanco);
+    color: var(--texto);
+    width: 100%;
+    min-width: 0;
+}
+
+.campo-entrada:focus {
+    outline: 2px solid var(--amarillo);
+    border-color: var(--verde);
+}
+
+.formulario-botones {
+    grid-column: 1 / -1;
+    display: flex;
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.formulario-botones .boton {
+    flex: 1;
+}
+
+.mensaje-error {
+    margin-top: 20px;
+    padding: 14px 16px;
+    border: 1px solid var(--rojo);
+    border-radius: 8px;
+    background-color: var(--rojo-claro);
+    color: var(--rojo);
+    font-size: 0.95rem;
+}
+
+.oculto {
+    display: none;
+}
+
+.metricas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 16px;
+}
+
+.metrica {
+    background-color: var(--verde-claro);
+    border-radius: 10px;
+    padding: 18px 12px;
+    text-align: center;
+}
+
+.metrica-nombre {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--texto-suave);
+    margin: 0;
+}
+
+.metrica-valor {
+    font-family: var(--fuente-titulos);
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: var(--verde-oscuro);
+    margin: 4px 0 0;
+}
+
+.valoracion {
+    border: 2px solid var(--verde);
+    border-radius: 10px;
+    padding: 18px;
+    text-align: center;
+}
+
+.valoracion-valor {
+    font-family: var(--fuente-titulos);
+    font-size: 2.8rem;
+    line-height: 1.1;
+    color: var(--verde);
+    margin: 4px 0;
+}
+
+.valoracion-detalle {
+    color: var(--texto-suave);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.tabla-contenedor {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.tabla {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--blanco);
+    box-shadow: var(--sombra);
+}
+
+.tabla-titulo {
+    text-align: left;
+    font-weight: 600;
+    color: var(--verde);
+    margin-bottom: 10px;
+}
+
+.tabla th,
+.tabla td {
+    border: 1px solid var(--borde);
+    padding: 14px 16px;
+    text-align: center;
+}
+
+.tabla thead th {
+    background-color: var(--verde-oscuro);
+    color: var(--blanco);
+}
+
+.tabla tbody th {
+    text-align: left;
+}
+
+.tabla tbody tr:nth-child(even) {
+    background-color: var(--verde-claro);
+}
+
+.consejos {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 32px;
+    align-items: center;
+}
+
+.consejos-lista {
+    padding-left: 20px;
+    margin: 0;
+}
+
+.consejos-lista li {
+    margin-bottom: 12px;
+}
+
+.consejos-lista li::marker {
+    color: var(--amarillo-oscuro);
+}
+
+.consejos-imagen {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    border-radius: var(--radio);
+    box-shadow: var(--sombra);
+}
+
 .pie {
     background-color: var(--verde-oscuro);
     color: var(--blanco);
@@ -261,8 +454,21 @@ a {
         height: 220px;
     }
 
-    .pasos {
+    .pasos,
+    .calculadora,
+    .formulario,
+    .consejos {
         grid-template-columns: 1fr;
+    }
+
+    .formulario-botones {
+        flex-direction: column;
+    }
+
+    .tabla th,
+    .tabla td {
+        padding: 10px 8px;
+        font-size: 0.85rem;
     }
 
     .boton {
