@@ -345,6 +345,22 @@ a {
     margin: 4px 0;
 }
 
+.valoracion-solido {
+    border-color: var(--amarillo-oscuro);
+}
+
+.valoracion-solido .valoracion-valor {
+    color: var(--amarillo-oscuro);
+}
+
+.valoracion-desarrollo {
+    border-color: var(--rojo);
+}
+
+.valoracion-desarrollo .valoracion-valor {
+    color: var(--rojo);
+}
+
 .valoracion-detalle {
     color: var(--texto-suave);
     font-size: 0.95rem;
