@@ -12,6 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/calculadora.js" defer></script>
 </head>
 <body>
 <div class="pagina">
@@ -75,8 +76,8 @@
                         <input class="campo-entrada" type="text" inputmode="numeric" id="vallas" placeholder="Ej: 7" size="6" maxlength="3">
                     </div>
                     <div class="formulario-botones">
-                        <button class="boton boton-principal" type="button" id="boton-calcular">Calcular</button>
-                        <button class="boton boton-secundario" type="button" id="boton-limpiar">Limpiar</button>
+                        <button class="boton boton-principal" type="button" id="boton-calcular" onclick="calcular()">Calcular</button>
+                        <button class="boton boton-secundario" type="button" id="boton-limpiar" onclick="limpiar()">Limpiar</button>
                     </div>
                 </form>
                 <div class="mensaje-error oculto" id="mensaje-error" role="alert"></div>
@@ -102,7 +103,7 @@
                         <p class="metrica-valor" id="resultado-vallas">—</p>
                     </div>
                 </div>
-                <div class="valoracion">
+                <div class="valoracion" id="valoracion">
                     <p class="metrica-nombre" id="valoracion-titulo">Valoración</p>
                     <p class="valoracion-valor" id="valoracion-valor">—</p>
                     <p class="valoracion-detalle" id="valoracion-detalle">Cargá tus datos para ver tu valoración.</p>
